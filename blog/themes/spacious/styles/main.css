@@ -17,7 +17,7 @@ pre, tt, code, pre *, tt *, code * {
 }
 
 body, input, textarea, select, button {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: Georgia, sans-serif;
 }
 
 pre, tt, code, pre *, tt *, code * {
@@ -185,7 +185,7 @@ a.hover {
 
 .e2-heading h2 {
   margin: -8px 0 0 0;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   color: #000;
@@ -342,7 +342,7 @@ a.hover {
   color: #000;
   font-size: 24px;
   line-height: 28px;
-  font-weight: normal;
+  font-weight: bold;
   max-width: 720px;
 }
 
@@ -359,7 +359,7 @@ a.hover {
 }
 
 .e2-note h1.e2-draft {
-  font-style: italic;
+  font-style: bold;
 }
 
 .e2-note-favourite h1 {
@@ -370,10 +370,7 @@ a.hover {
 
 .e2-note-date {
   font-size: 11px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
   margin: 0 0 10px 0;
-  font-weight: bold;
 }
 
 .e2-note-text {

@@ -1,0 +1,89 @@
+.cover {
+}
+
+.cover__fotorama {
+  background-color: $color-text;
+  &.cover__color--black {
+    background-color: $color-bg;
+  }
+
+  .fotorama__html {
+    z-index: 10;
+  }
+
+  .fotorama__spinner {
+    top: 0 !important;
+    left: 100% !important;
+    margin: 32px 0 0 -32px;
+  }
+}
+
+.cover__layout {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100%;
+
+  $text-bg-size: 7px;
+  $text-bg: 0 floor($text-bg-size/2) 0 $text-bg-size*1.5;
+
+  .text-bg {
+    color: $color-bg;
+    background-color: $color-text;
+    box-shadow: $text-bg $color-text;
+    a {
+      @include link-colors($color-bg, $color-bg, $color-bg, 0, !important);
+    }
+  }
+
+  .text-bg__inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  &.cover__color--black {
+    .text-bg {
+      color: $color-text;
+      background-color: $color-bg;
+      box-shadow: $text-bg $color-bg;
+      a {
+        @extend %black-link;
+      }
+    }
+  }
+
+  &.cover__color--transparent {
+    .text-bg {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+.cover__floor {
+  height: 100%;
+
+  .blog-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .note-title-date {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+
+  .e2-note-text {
+    max-width: 36em;
+    p, ul, ol {
+      overflow: visible;
+    }
+  }
+}

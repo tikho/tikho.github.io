@@ -1,0 +1,23 @@
+.sub-content {
+  &#comments {
+    background-color: #f5f6f7;
+    .sub-content__wrap {
+      padding-top: 2em;
+      padding-bottom: 1em;
+    }
+  }
+
+  margin-bottom: 3em;
+
+  
+  //overflow: hidden;
+  &:after,
+  &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
